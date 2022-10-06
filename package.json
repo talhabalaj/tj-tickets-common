@@ -1,0 +1,21 @@
+{
+  "name": "@tj-tickets/common",
+  "version": "1.0.1",
+  "description": "",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "scripts": {
+    "clean": "del ./build/*",
+    "build": "npm run clear && tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "files": [
+    "build/**/*"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "del-cli": "^5.0.0",
+    "typescript": "^4.8.4"
+  }
+}
