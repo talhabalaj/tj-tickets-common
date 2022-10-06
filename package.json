@@ -1,12 +1,13 @@
 {
   "name": "@tj-tickets/common",
-  "version": "1.0.2",
+  "version": "1.0.1",
   "description": "",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
   "scripts": {
     "clean": "del ./build/*",
-    "build": "npm run clear && tsc"
+    "build": "npm run clean && tsc",
+    "pub": "git add . && git commit -m 'updates' && npm run patch && npm run build && npm publish"
   },
   "keywords": [],
   "author": "",
