@@ -10,7 +10,7 @@ export const errorHandler = (
   if (res.writableFinished) return;
 
   if (err instanceof CustomError)
-    res.status(err.statusCode).send({
+    return res.status(err.statusCode).send({
       errors: err.serializeErrors(),
     });
 
